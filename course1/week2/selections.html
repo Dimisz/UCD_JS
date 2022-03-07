@@ -8,15 +8,68 @@
     <h1>Testing Selections</h1>
 
     <script type="text/javascript">
-      var red = true;
-      var blue = false;
+      var colors = ['red', 'blue', 'green', 'yellow'];
+      var selectedColor = colors[0];
 
-      if(red){
-        console.log("The statement is true");
+/*
+      if(selectedColor === "red"){
+        console.log("The color is red");
+      }
+      else if(selectedColor === "blue"){
+        console.log("The color is blue");
+      }
+      else if(selectedColor === "green"){
+        console.log("Selected color is green");
       }
       else {
-        console.log("The statement is false");
+        console.log("The color is yellow")
       }
+*/
+
+//    SWITCH STATEMENT
+/*
+switch(selectedColor){
+  case "red":
+    console.log("It's red");
+    break;
+  case "blue":
+    console.log("Blue is selected");
+    break;
+  case "green":
+    console.log("Green is selected");
+    break;
+  case "yellow":
+    console.log("Yellow is selected");
+    break;
+  default:
+    console.log("It's some other color");
+}
+*/
+
+// && OPERATOR
+/*
+  var goodMood = true;
+  var gotSleep = false;
+
+  if(goodMood && gotSleep){
+    console.log("I'm perfect!")
+  }
+  else{
+    console.log("Nah, somethings wrong with me((");
+  }
+*/
+
+//    || OPERATOR
+  var gotBreakfast = false;
+  var gotLunch = false;
+  var gotDinner = false;
+
+  if(gotBreakfast || gotLunch || gotDinner){
+    console.log("Not starving");
+  }
+  else{
+    console.log("Starving");
+  }
     </script>
   </body>
 </html>
