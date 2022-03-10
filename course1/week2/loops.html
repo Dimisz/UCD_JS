@@ -31,6 +31,7 @@
   */
 
   // WHILE LOOP
+  /*
   var incrementor = 0;
   var text = "";
 
@@ -39,8 +40,35 @@
     incrementor++;
   }
   console.log(text);
+*/
 
+// String methods
+/*
+var text = "I am really hungry for";
+console.log(text);
+console.log(text.toUpperCase());
+var reallyLocation = text.search("really");
+console.log(reallyLocation);
 
+var specialWord = text.substr(reallyLocation, 6);
+console.log(specialWord);
+
+specialWord = specialWord.toUpperCase();
+var newText = text.replace("really", specialWord);
+console.log(newText);
+*/
+
+var foods = ["bread", "cheese", "eggs", "bacon"];
+var starter = "I am hungry for some ";
+for(var i = 0; i < foods.length; i++){
+  if(i % 2 === 0){
+    console.log(`${starter} ${foods[i].toUpperCase()}`);
+  }
+  else{
+    console.log(`${starter} ${foods[i]}`);
+  }
+
+}
     </script>
   </body>
 </html>
