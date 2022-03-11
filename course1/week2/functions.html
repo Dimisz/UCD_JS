@@ -29,17 +29,12 @@
 
       // Generate random numbers
       function randomInt(min, max){
-        var numOfValues = max - min + 1;
-        // console.log(`Number of values ${numOfValues}`);
 
-        var randomNum = Math.random();
-        var randomVal = randomNum * numOfValues;
-        console.log(Math.floor(randomVal));
-
-
+        return Math.floor(((max - min + 1) * Math.random()) + min);
       }
 
-      randomInt(5, 10);
+      var foods = ["burger", "chicken", "cheese", "apple"]
+      console.log(foods[randomInt(0, 3)]);
 
     </script>
   </body>
