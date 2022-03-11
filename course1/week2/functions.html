@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Functions</title>
+  </head>
+  <body>
+    <h1>Functions</h1>
+    <script type="text/javascript">
+      function doStuff(){
+        var myString = "Here is a string of text";
+        var upperString = myString.toUpperCase();
+        console.log(myString);
+        console.log(upperString);
+      }
+
+      function upperMessage(message){
+        console.log(message.toUpperCase());
+      }
+
+      //doStuff();
+      // upperMessage("here's a message");
+
+      function returnSum(num1, num2){
+        return num1 + num2;
+      }
+
+      // console.log(returnSum(15, 16));
+
+      // Generate random numbers
+      function randomInt(min, max){
+        var numOfValues = max - min + 1;
+        // console.log(`Number of values ${numOfValues}`);
+
+        var randomNum = Math.random();
+        var randomVal = randomNum * numOfValues;
+        console.log(Math.floor(randomVal));
+
+
+      }
+
+      randomInt(5, 10);
+
+    </script>
+  </body>
+</html>
