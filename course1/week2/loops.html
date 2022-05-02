@@ -2,73 +2,44 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Loops</title>
+    <title>Loop Examples</title>
   </head>
   <body>
-    <h1>Lesson about loops</h1>
-
+    <h1>Loops in JS</h1>
     <script type="text/javascript">
-    /*
-      var colors = ["red", "green", "blue", "yellow", "brown"];
-
-      for(var i = 0; i < colors.length; i++){
-        console.log(colors[i]);
+      // FOR LOOPS
+      /*
+      for(var i = 0; i < 10; i++){
+        console.log("Current number: " + (i+1));
       }
-    */
+      */
 
-    //    FOR ... OF LOOP
-  /*
-    var food = ["grapes", "cheese", "bread", "olives"];
+      // WORKING WITH ARRAYS
+      /*
+      var colors = ["red", "blue", "yellow", "green"];
+      for(var i = 0; i < colors.length; i++){
+        console.log("Current color: " + colors[i]);
+      }
+      */
 
-    for(var item of food){
-      console.log(item);
-    }
+      //FOR ... OF LOOP
+      /*
+      var food = ["grapes", "orange", "apple", "banana"];
 
-    var statement = "Starting hard work today";
-    for(var letter of statement){
-      console.log(letter);
-    }
-  */
+      for(var fruit of food){
+        console.log(fruit);
+      }
+      */
 
-  // WHILE LOOP
-  /*
-  var incrementor = 0;
-  var text = "";
+      // WHILE LOOPS
+      var incrementor = 0;
+      var text = "";
 
-  while(incrementor < 10){
-    text += `The incrementor has gone up to ${incrementor} and it's ${incrementor*incrementor} if squared\n`;
-    incrementor++;
-  }
-  console.log(text);
-*/
-
-// String methods
-/*
-var text = "I am really hungry for";
-console.log(text);
-console.log(text.toUpperCase());
-var reallyLocation = text.search("really");
-console.log(reallyLocation);
-
-var specialWord = text.substr(reallyLocation, 6);
-console.log(specialWord);
-
-specialWord = specialWord.toUpperCase();
-var newText = text.replace("really", specialWord);
-console.log(newText);
-*/
-
-var foods = ["bread", "cheese", "eggs", "bacon"];
-var starter = "I am hungry for some ";
-for(var i = 0; i < foods.length; i++){
-  if(i % 2 === 0){
-    console.log(`${starter} ${foods[i].toUpperCase()}`);
-  }
-  else{
-    console.log(`${starter} ${foods[i]}`);
-  }
-
-}
+      while(incrementor < 10){
+        text += `The incrementor has gone up to ${incrementor}\n`;
+        incrementor++;
+      }
+      console.log(text);
     </script>
   </body>
 </html>
