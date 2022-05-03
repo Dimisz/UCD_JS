@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Challenges 10 -16</title>
+  </head>
+  <body>
+    <h1>Challenges 1 - 16</h1>
+
+    <script type="text/javascript">
+
+// CHALLENGES 10 - 13
+/*
+      function hello(name){
+        if(name == null || name == ""){
+          console.log("You didn't give me your name");
+        }
+        else{
+          console.log(`Hey ${name}! Hi there!`);
+        }
+      }
+
+      var userName = prompt("Provide your name", "");
+      hello(userName);
+*/
+
+// CHALLENGE 14 & 15
+    function randomInt(min, max){
+      var numOfValues = max - min + 1;
+      var randomNum = Math.random();
+      var randomVal = randomNum * numOfValues;
+      var roundedRandomVal = Math.floor(randomVal);
+      var finalNum = min + roundedRandomVal;
+      return finalNum;
+    }
+
+
+    function hello(name){
+      if(name == null || name == ""){
+        return "You didn't give me your name";
+      }
+      else{
+        return `Hey ${name}! Hi there!`;
+      }
+    }
+
+    var userName = prompt("Provide your name", "");
+    var result = hello(userName);
+    console.log(result);
+
+
+    var foods = ["cheese", "pizza", "chicken"];
+    function hospitality(name, foods){
+        var randomFood = foods[randomInt(0, foods.length - 1)];
+        console.log(`${name}, would you like some ${randomFood}?`);
+    }
+
+
+    hospitality(userName, foods);
+
+
+
+
+    </script>
+  </body>
+</html>
