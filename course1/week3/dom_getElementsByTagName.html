@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DOM examples</title>
+  </head>
+  <body>
+    <h1>DOM examples</h1>
+    <p>Here is a paragraph</p>
+    <p>Here is another paragraph</p>
+    <p>Here is one more paragraph</p>
+
+    <script type="text/javascript">
+      var myParagraphs = document.getElementsByTagName("p");
+      // console.log(myParagraphs);
+
+      for(var i = 0; i < myParagraphs.length; i++){
+        myParagraphs[i].style.color = "red";
+        alert(`this is element ${i}`);
+      }
+    </script>
+  </body>
+</html>
