@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DOM examples</title>
+    <style media="screen">
+      .blue {color: blue;}
+    </style>
+  </head>
+  <body>
+    <div id="special">
+      <p>Here is some text</p>
+      <p>Here is some moore text</p>
+    </div>
+    <form>
+      <label><input type="checkbox">YES!</label>
+    </form>
+
+    <script type="text/javascript">
+      var firstPara = document.querySelector("p");
+      firstPara.className = "blue";
+
+      var myCheckbox = document.querySelector("input");
+      myCheckbox.setAttribute("checked", "checked");
+    </script>
+  </body>
+</html>
