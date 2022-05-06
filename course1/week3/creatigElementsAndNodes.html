@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DOM examples</title>
+  </head>
+  <body>
+    <h1>Creating elements and text nodes</h1>
+    <div>
+      <p>Here is a paragraph</p>
+    </div>
+
+    <script type="text/javascript">
+      var myTag = document.createElement("p");
+      var mySentence = document.createTextNode("second paragraph");
+      myTag.appendChild(mySentence);
+      document.querySelector("div").appendChild(myTag);
+    </script>
+  </body>
+</html>
