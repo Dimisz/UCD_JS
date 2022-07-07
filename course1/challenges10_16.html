@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Challenges 10-16</title>
+</head>
+<body>
+	<h1>Challenges 10 - 16</h1>
+	<script type="text/javascript">
+		
+		console.log("Challenges 10 - 16");
+
+		function getRandomElement(array){
+			var max = array.length - 1;
+			return array[Math.floor(Math.random() * max)];
+		}
+
+
+		function greet(name){
+			return `Hello ${name}, and welcome!`;
+		}
+		//hello("John");
+
+
+		function hospitality(name, gift){
+			console.log(`${name}, would you like some ${gift}?`);
+		}
+
+
+		function greetAndOfferGifts(){
+			var name = prompt("Hi, there! What is your name?", "");
+			if(name != "" && name != null){
+				var gifts =[ "apple", "coffee", "tea", "peanuts", "milkshake"];
+				console.log(greet(name));
+				//for(var gift of gifts){
+				//	hospitality(name, gift);
+				//}
+				hospitality(name, getRandomElement(gifts));
+			}
+			else{
+				console.log("You didn't give me a name\n So no gifts for you");
+			}
+		}
+
+		greetAndOfferGifts();
+	</script>
+</body>
+</html>
