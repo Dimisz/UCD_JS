@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Functions</title>
+</head>
+<body>
+	<h1>Functions</h1>
+	<script type="text/javascript">
+		// function upperMessaage(){
+		// 	var userMessage = prompt("Enter your message", "None whatsoever");
+		// 	console.log(`Your message in caps: ${userMessage.toUpperCase()}`);
+		// }
+
+		// upperMessaage();
+
+
+		//Generating random numbers
+		function randomInt(min, max){
+			var numOfValues = max - min + 1;
+			//console.log(numOfValues);
+			//var randomNum = Math.random();
+			var randomVal = Math.floor(Math.random() * numOfValues);
+			//console.log(randomVal);
+			//var roundedRandomVal = Math.floor(randomVal) + min;
+			return randomVal + min;
+		}
+
+		//anonymous functions
+		var greeting = function(){
+			console.log("Hello from the function");
+		}
+		greeting();
+
+		console.log(randomInt(5, 10));
+	</script>
+</body>
+</html>
